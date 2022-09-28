@@ -19,11 +19,11 @@
 }
 
 :root {
-  --darkBlue: #264653;
-  --shiningBlue: #197066;
-  --softYellow: #e9c46a;
-  --softOrange: #f4a261;
-  --lightSalmon: #e76f51;
+  --maizeCrayola: #e9c46a;
+  --sandyBrown: #f4a261;
+  --burntSienna: #e76f51;
+  --pineGreen: #197066;
+  --charcoal: #264653;
 }
 
 * {
@@ -43,8 +43,8 @@ html {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(
     -60deg,
-    var(--darkBlue) 50%,
-    var(--shiningBlue) 50%
+    var(--charcoal) 50%,
+    var(--pineGreen) 50%
   );
   bottom: 0;
   left: -50%;
@@ -93,7 +93,7 @@ html {
   align-items: center;
   justify-content: center;
 
-  border: 2px solid var(--lightSalmon);
+  border: 2px solid var(--burntSienna);
   border-radius: 50%;
 }
 
@@ -106,13 +106,13 @@ html {
 
 .greetings {
   padding-top: 16px;
-  color: var(--lightSalmon);
+  color: var(--burntSienna);
   font-size: 23px;
   font-weight: 600;
 }
 
 .name {
-  color: var(--softYellow);
+  color: var(--maizeCrayola);
 
   font-size: 30px;
   font-weight: 600;
@@ -132,11 +132,11 @@ html {
   width: 326px;
   height: 49px;
 
-  border: 2px solid var(--lightSalmon);
+  border: 2px solid var(--burntSienna);
   border-radius: 2px;
 
-  background: var(--lightSalmon);
-  color: var(--darkBlue);
+  background: var(--burntSienna);
+  color: var(--charcoal);
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -147,12 +147,11 @@ html {
   transition: ease 0.3s;
 }
 
-/* Hover: passar o mouse por cima */
 .link:hover {
-  color: var(--darkBlue);
+  color: var(--charcoal);
 
-  background: var(--softYellow);
-  border: 2px solid var(--softYellow);
+  background: var(--maizeCrayola);
+  border: 2px solid var(--maizeCrayola);
   border-radius: 2px;
 
   transform: scale(1);
