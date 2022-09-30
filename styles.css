@@ -125,7 +125,7 @@ html {
   flex-direction: column;
 }
 
-.link {
+.links {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
@@ -133,7 +133,7 @@ html {
   height: 49px;
 
   border: 2px solid var(--burntSienna);
-  border-radius: 2px;
+  border-radius: 0.2rem;
 
   background: var(--burntSienna);
   color: var(--charcoal);
@@ -147,12 +147,13 @@ html {
   transition: ease 0.3s;
 }
 
-.link:hover {
+.links:hover {
   color: var(--charcoal);
+  cursor: pointer;
 
   background: var(--maizeCrayola);
   border: 2px solid var(--maizeCrayola);
-  border-radius: 2px;
+  border-radius: 0.2rem;
 
   transform: scale(1);
   transition: ease 0.3s;
@@ -167,11 +168,83 @@ html {
   gap: 50px;
 }
 
-.social {
+.socials {
   transform: scale(1);
   transition: ease 0.3s;
 }
 
-.social:hover {
+.socials:hover {
   transform: scale(1.5);
+}
+
+#fadeModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50em;
+  max-width: 85%;
+  background-color: var(--pineGreen);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+#fadeModal,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalHeader .modalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid var(--burntSienna);
+  margin-bottom: 1rem;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.modalTitle {
+  color: var(--maizeCrayola);
+}
+
+.modalBody {
+  padding-top: 1rem;
+  color: whitesmoke;
+  font-weight: 300;
+}
+
+#modal.hideModal,
+#fadeModal.hideModal {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hideModal {
+  top: 0;
+}
+
+.close {
+  transform: scale(1);
+  transition: ease 0.2s;
+}
+
+.close:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }

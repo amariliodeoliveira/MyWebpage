@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/favicon.png">
 
     <title>Amarilio de Oliveira | Portfolio</title>
@@ -17,9 +17,11 @@
 <body>
 
     <!-- Animated Background -->
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
+    <div id="backgroundAnimation">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </div>
 
     <div class="container">
 
@@ -37,24 +39,64 @@
 
             <!-- Links Buttons -->
             <div class="links-container">
-                <a target="_blank" href="" class="link">Sobre Mim</a>
-                <a target="_blank" href="" class="link">Portfolio</a>
-                <a target="_blank" href="" class="link">Entre em Contato</a>
+                <a class="links" role="button" id="openAboutMe">Sobre Mim</a>
+                <a class="links" role="button" id="portfolioModal">Portfolio</a>
+                <a class="links" role="button" id="contactMeModal">Entre em Contato</a>
             </div>
 
             <!-- Social Container -->
             <div class="socials-container">
-                <a target="_blank" href="https://www.instagram.com/amariliodeoliveira/" class="social"><img
-                        src="./assets/instagram.svg" alt=""></a>
-                <a target="_blank" href="https://www.linkedin.com/in/amariliodeoliveira/" class="social"><img
-                        src="./assets/linkedin.svg" alt=""></a>
-                <a target="_blank" href="https://github.com/amariliodeoliveira" class="social"><img
-                        src="./assets/github.svg" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/amariliodeoliveira/" class="socials"><img
+                        src="./assets/instagram.svg" alt="Instagram"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/amariliodeoliveira/" class="socials"><img
+                        src="./assets/linkedin.svg" alt="LinkedIn"></a>
+                <a target="_blank" href="https://github.com/amariliodeoliveira" class="socials"><img
+                        src="./assets/github.svg" alt="GitHub"></a>
             </div>
         </div>
+
+        <!-- Modals -->
+        <div id="fadeModal" class="hideModal"></div>
+        <div id="modal" class="hideModal">
+
+            <div class="modalHeader">
+                <span class="modalTitle">Sobre Mim</p>
+                    <a class="close" id="closeModal" role="button"><img src="./assets/closeModal.svg" alt="Fechar"></a>
+            </div>
+
+            <div class="modalBody">
+                <span>
+                    <!---->🖥️ Entusiasta de todos os tipos de tecnologias. Atualmente em transição profissional para
+                    retornar a área que tanto amo e tornar-me um desenvolvedor Full Stack.
+                    <!----><br><br>
+                    <!---->💾 Tive meus primeiros contatos com computadores logo cedo, aos 4 ~ 5 anos de idade. Era um
+                    lindo iMac G3 na
+                    cor Azul Bondi.
+                    <!----><br><br>
+                    <!---->👨🏽‍🏫 Por 2 anos, fui estudante de Engenharia da Computação no Instituto Federal do Ceará
+                    em meados de
+                    2011. Período em que também participei de diversos cursos na área.
+                    <!----><br><br>
+                    <!---->🧑‍🍳 Originalmente formado em Gastronomia e Pós-Graduado em Gestão e Negócios em
+                    Gastronomia, tenho na
+                    cozinha uma das minhas paixões.
+                    <!----><br><br>
+                    <!---->🎶 Apaixonado por música, já atuei por vários anos como DJ até meados de 2016, o que
+                    facilitou a minha
+                    comunicação e a interação com grupos de pessoas e a lidar bem com trabalhos em equipes.
+                    <!----><br><br>
+                    <!---->📈 Estou sempre em busca de continuar a aprender e evoluir!
+                    <!----><br><br>
+                    <!---->✅ E então, que tal trabalharmos juntos?
+                </span>
+            </div>
+        </div>
+
     </div>
 
 </body>
 
+<!-- Scripts -->
+<script src="scripts.js" defer> </script>
 
 </html>
