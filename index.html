@@ -39,10 +39,9 @@
 
             <!-- Modal Container -->
             <div class="modalContainer">
-                <a class="modalButton" role="button" id="aboutMeModal">Sobre Mim</a>
-                <a class="modalButton" role="button" id="portfolioModal">Portfolio</a>
-                <a class="modalButton" role="button" id="contactMeModal"
-                    href="mailto:amariliodeoliveira@outlook.com">E-mail</a>
+                <a class="modalButton" role="button" id="openAboutMe">Sobre Mim</a>
+                <a class="modalButton" role="button" id="openPortfolio">Portfolio</a>
+                <a class="modalButton" role="button" href="mailto:amariliodeoliveira@outlook.com">E-mail</a>
             </div>
 
             <!-- Social Container -->
@@ -57,57 +56,84 @@
 
         </div>
 
-        <!-- Modal Structure -->
-        <div id="fadeModal" class="hideModal"></div>
-        <div id="modal" class="hideModal">
+        <!-- About Me / Modal -->
+        <div id="fadeAboutMe" class="hideModal"></div>
+        <div id="aboutMe" class="hideModal">
 
             <div class="modalHeader">
-                <span class="modalTitle">Modal Title</p>
-                    <a class="close" id="closeModal" role="button"><img src="./assets/closeModal.svg" alt="Fechar"></a>
+                <span class="modalTitle">Sobre Mim</p>
+                    <a class="close" id="closeAboutMe" role="button"><img src="./assets/closeModal.svg"
+                            alt="Fechar"></a>
             </div>
 
             <div class="modalBody">
-                <span>
-                    Modal text.
-                </span>
+                <p class="aboutMeContent">
+                    Olá, tudo bem? Prazer, me chamo <strong class="strong">Amarilio de Oliveira</strong>! Tenho 28 anos
+                    e atualmente
+                    moro em Fortaleza,
+                    capital do Ceará, na cidade em que nasci e fui criado.
+                    <br><br>
+                    Sou aluno do 3º semestre de Bacharelado em Sistemas de Informação pela <a target="_blank"
+                        class="links" href="https://www.unifanor.edu.br/">UniFanor – Wyden</a> e do curso
+                    de Desenvolvedor Full Stack pela <a target="_blank" class="links"
+                        href="https://digitalcollege.com.br/">Digital College</a>, com os quais busco uma transição
+                    profissional para
+                    retornar a área que tanto amo.
+                    <br><br>
+                    Como um bom entusiasta de tecnologias, tive meus primeiros contatos com computadores logo cedo, aos
+                    5 anos de idade. Era um lindo iMac G3 na cor Azul Bondi. Na época, meus pais trabalhavam com
+                    importação de artigos tecnológicos como computadores, celulares ou qualquer tipo de tecnologia de
+                    uso pessoal inovadora. Me fascinava tudo aquilo e sempre quis entender como funcionava.
+                    <br><br>
+                    No auge dos meus 10 anos, adorava mexer com programação. Brincava de editar e recriar alguns sites
+                    em HTML pelo Microsoft Publisher (nada de outro mundo) e até de personalizar alguns reprodutores de
+                    música e navegadores pegando dicas e conselhos em fóruns da época. Sempre buscava participar dos
+                    clubes de informática do colégio e não perdia uma oficina de robótica (perdi as contas de quantos
+                    motorzinhos de dentista usei para fazer as mais variadas invenções).
+                    <br><br>
+                    Por 2 anos, fui estudante de Bacharelado em Engenharia da Computação no <a target="_blank"
+                        class="links" href="https://ifce.edu.br/">Instituto Federal
+                        do Ceará
+                        (IFCE)</a> em meados de 2011, onde fui admitido na primeira tentativa. Porém, devido a diversas
+                    greves
+                    que acabaram por atrasar o calendário e incentivado por amigos e familiares, acabei indo atrás de
+                    uma outra paixão: a Gastronomia. Me formei em Gastronomia pela <a target="_blank" class="links"
+                        href="https://www.unifanor.edu.br/">UniFanor – Wyden</a> e, posteriormente,
+                    em uma Pós-Graduado em Gestão e Negócios em Gastronomia pela <a target="_blank" class="links"
+                        href="https://vemprafam.com.br/">Faculdade das Americas (FAM)</a>. Sem
+                    dúvidas, tenho na cozinha uma das minhas grandes experiências.
+                    <br><br>
+                    Uma curiosidade sobre mim? Movido pelo amor a música eletrônica, atuei como DJ desde os meus 14 anos
+                    de idade até meados de 2016. Cheguei a tocar em grandes eventos aqui da minha cidade. Uma
+                    experiência que ajudou aquele adolescente tímido a ter na comunicação um de seus pontos fortes, já
+                    que sempre interagia com diferentes grupos de pessoas e lidava muito bem com trabalhos em equipes!
+                </p>
+            </div>
+        </div>
+
+        <!-- Portfolio / Modal -->
+        <div id="fadePortfolio" class="hideModal"></div>
+        <div id="portfolio" class="hideModal">
+
+            <div class="modalHeader">
+                <span class="modalTitle">Portfolio</p>
+                    <a class="close" id="closePortfolio" role="button"><img src="./assets/closeModal.svg"
+                            alt="Fechar"></a>
+            </div>
+
+            <div class="modalBody">
+                <p class="portfolioContent">
+                    Ops! Ainda em construção.
+                </p>
             </div>
         </div>
 
 
-
-
-        <!-- About Me -->
-        <div hidden="true">
-            <h3 class="aboutMeTitle">About Me</h3>
-            <p class="aboutMeContent">
-                <!---->🖥️ Entusiasta de todos os tipos de tecnologias. Atualmente em transição profissional para
-                retornar a área que tanto amo e tornar-me um desenvolvedor Full Stack.
-                <!----><br><br>
-                <!---->💾 Tive meus primeiros contatos com computadores logo cedo, aos 4 ~ 5 anos de idade. Era um
-                lindo iMac G3 na
-                cor Azul Bondi.
-                <!----><br><br>
-                <!---->👨🏽‍🏫 Por 2 anos, fui estudante de Engenharia da Computação no Instituto Federal do Ceará
-                em meados de
-                2011. Período em que também participei de diversos cursos na área.
-                <!----><br><br>
-                <!---->🧑‍🍳 Originalmente formado em Gastronomia e Pós-Graduado em Gestão e Negócios em
-                Gastronomia, tenho na
-                cozinha uma das minhas paixões.
-                <!----><br><br>
-                <!---->🎶 Apaixonado por música, já atuei por vários anos como DJ até meados de 2016, o que
-                facilitou a minha
-                comunicação e a interação com grupos de pessoas e a lidar bem com trabalhos em equipes.
-                <!----><br><br>
-                <!---->📈 Estou sempre em busca de continuar a aprender e evoluir!
-            </p>
-        </div>
-
     </div>
 
-</body>
+    <!-- Scripts -->
+    <script src="scripts.js" defer> </script>
 
-<!-- Scripts -->
-<script src="scripts.js" defer> </script>
+</body>
 
 </html>

@@ -118,6 +118,14 @@ html {
   font-weight: 600;
 }
 
+.strong {
+  color: var(--sandyBrown);
+}
+
+.links {
+  color: var(--maizeCrayola);
+}
+
 .modalContainer {
   margin-top: 17px;
 
@@ -177,36 +185,6 @@ html {
   transform: scale(1.5);
 }
 
-#fadeModal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 5;
-}
-
-#modal {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50em;
-  max-width: 85%;
-  background-color: var(--pineGreen);
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-  z-index: 10;
-}
-
-#fadeModal,
-#modal {
-  transition: 0.5s;
-  opacity: 1;
-  pointer-events: all;
-}
-
 .modalHeader .modalTitle {
   display: flex;
   justify-content: space-between;
@@ -229,19 +207,12 @@ html {
   padding-top: 1rem;
   color: whitesmoke;
   font-weight: 300;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 1em;
-}
-
-#modal.hideModal,
-#fadeModal.hideModal {
-  opacity: 0;
-  pointer-events: none;
-}
-
-#modal.hideModal {
-  top: 0;
+  position: absolute;
+  width: auto;
+  height: calc(100% - 140px);
+  overflow-y: auto;
+  margin: 10px 30px 30px 30px;
+  padding: 0px 20px 0px 0px;
 }
 
 .close {
@@ -252,4 +223,92 @@ html {
 .close:hover {
   transform: scale(1.3);
   cursor: pointer;
+}
+
+/* About Me Modal */
+#fadeAboutMe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#aboutMe {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50em;
+  max-width: 85%;
+  height: 60em;
+  max-height: 90%;
+  background-color: var(--pineGreen);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+#fadeAboutMe,
+#aboutMe {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#aboutMe.hideModal,
+#fadeAboutMe.hideModal {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#aboutMe.hideModal {
+  top: 0;
+}
+
+/* Portfolio Modal */
+#fadePortfolio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#portfolio {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50em;
+  max-width: 85%;
+  min-height: 20%;
+  max-height: 90%;
+  background-color: var(--pineGreen);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+#fadePortfolio,
+#portfolio {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#portfolio.hideModal,
+#fadePortfolio.hideModal {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#portfolio.hideModal {
+  top: 0;
 }
