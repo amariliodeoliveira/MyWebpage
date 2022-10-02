@@ -73,7 +73,7 @@ html {
   justify-content: center;
 }
 
-.tree-container {
+.treeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,14 +118,14 @@ html {
   font-weight: 600;
 }
 
-.links-container {
+.modalContainer {
   margin-top: 17px;
 
   display: flex;
   flex-direction: column;
 }
 
-.links {
+.modalButton {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
@@ -147,7 +147,7 @@ html {
   transition: ease 0.3s;
 }
 
-.links:hover {
+.modalButton:hover {
   color: var(--charcoal);
   cursor: pointer;
 
@@ -159,7 +159,7 @@ html {
   transition: ease 0.3s;
 }
 
-.socials-container {
+.socialContainer {
   margin-top: 30px;
   margin-bottom: 5px;
 
@@ -168,12 +168,12 @@ html {
   gap: 50px;
 }
 
-.socials {
+.social {
   transform: scale(1);
   transition: ease 0.3s;
 }
 
-.socials:hover {
+.social:hover {
   transform: scale(1.5);
 }
 
@@ -214,6 +214,8 @@ html {
 
   border-bottom: 2px solid var(--burntSienna);
   margin-bottom: 1rem;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 
   font-size: 30px;
   font-weight: 600;
@@ -227,6 +229,9 @@ html {
   padding-top: 1rem;
   color: whitesmoke;
   font-weight: 300;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
 }
 
 #modal.hideModal,

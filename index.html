@@ -24,72 +24,83 @@
     </div>
 
     <div class="container">
+        <div class="treeContainer">
 
-        <!-- Avatar Circle -->
-        <div class="tree-container">
-
+            <!-- Avatar Circle -->
             <div class="avatar">
                 <img src="./assets/avatar.png" alt="">
             </div>
 
+            <!-- Greetings Text -->
             <div class="hello">
                 <h2 class="greetings">Prazer,</h2>
                 <h1 class="name">Amarilio de Oliveira!</h1>
             </div>
 
-            <!-- Links Buttons -->
-            <div class="links-container">
-                <a class="links" role="button" id="openAboutMe">Sobre Mim</a>
-                <a class="links" role="button" id="portfolioModal">Portfolio</a>
-                <a class="links" role="button" id="contactMeModal">Entre em Contato</a>
+            <!-- Modal Container -->
+            <div class="modalContainer">
+                <a class="modalButton" role="button" id="aboutMeModal">Sobre Mim</a>
+                <a class="modalButton" role="button" id="portfolioModal">Portfolio</a>
+                <a class="modalButton" role="button" id="contactMeModal"
+                    href="mailto:amariliodeoliveira@outlook.com">E-mail</a>
             </div>
 
             <!-- Social Container -->
-            <div class="socials-container">
-                <a target="_blank" href="https://www.instagram.com/amariliodeoliveira/" class="socials"><img
+            <div class="socialContainer">
+                <a target="_blank" href="https://www.instagram.com/amariliodeoliveira/" class="social"><img
                         src="./assets/instagram.svg" alt="Instagram"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/amariliodeoliveira/" class="socials"><img
+                <a target="_blank" href="https://www.linkedin.com/in/amariliodeoliveira/" class="social"><img
                         src="./assets/linkedin.svg" alt="LinkedIn"></a>
-                <a target="_blank" href="https://github.com/amariliodeoliveira" class="socials"><img
+                <a target="_blank" href="https://github.com/amariliodeoliveira" class="social"><img
                         src="./assets/github.svg" alt="GitHub"></a>
             </div>
+
         </div>
 
-        <!-- Modals -->
+        <!-- Modal Structure -->
         <div id="fadeModal" class="hideModal"></div>
         <div id="modal" class="hideModal">
 
             <div class="modalHeader">
-                <span class="modalTitle">Sobre Mim</p>
+                <span class="modalTitle">Modal Title</p>
                     <a class="close" id="closeModal" role="button"><img src="./assets/closeModal.svg" alt="Fechar"></a>
             </div>
 
             <div class="modalBody">
                 <span>
-                    <!---->🖥️ Entusiasta de todos os tipos de tecnologias. Atualmente em transição profissional para
-                    retornar a área que tanto amo e tornar-me um desenvolvedor Full Stack.
-                    <!----><br><br>
-                    <!---->💾 Tive meus primeiros contatos com computadores logo cedo, aos 4 ~ 5 anos de idade. Era um
-                    lindo iMac G3 na
-                    cor Azul Bondi.
-                    <!----><br><br>
-                    <!---->👨🏽‍🏫 Por 2 anos, fui estudante de Engenharia da Computação no Instituto Federal do Ceará
-                    em meados de
-                    2011. Período em que também participei de diversos cursos na área.
-                    <!----><br><br>
-                    <!---->🧑‍🍳 Originalmente formado em Gastronomia e Pós-Graduado em Gestão e Negócios em
-                    Gastronomia, tenho na
-                    cozinha uma das minhas paixões.
-                    <!----><br><br>
-                    <!---->🎶 Apaixonado por música, já atuei por vários anos como DJ até meados de 2016, o que
-                    facilitou a minha
-                    comunicação e a interação com grupos de pessoas e a lidar bem com trabalhos em equipes.
-                    <!----><br><br>
-                    <!---->📈 Estou sempre em busca de continuar a aprender e evoluir!
-                    <!----><br><br>
-                    <!---->✅ E então, que tal trabalharmos juntos?
+                    Modal text.
                 </span>
             </div>
+        </div>
+
+
+
+
+        <!-- About Me -->
+        <div hidden="true">
+            <h3 class="aboutMeTitle">About Me</h3>
+            <p class="aboutMeContent">
+                <!---->🖥️ Entusiasta de todos os tipos de tecnologias. Atualmente em transição profissional para
+                retornar a área que tanto amo e tornar-me um desenvolvedor Full Stack.
+                <!----><br><br>
+                <!---->💾 Tive meus primeiros contatos com computadores logo cedo, aos 4 ~ 5 anos de idade. Era um
+                lindo iMac G3 na
+                cor Azul Bondi.
+                <!----><br><br>
+                <!---->👨🏽‍🏫 Por 2 anos, fui estudante de Engenharia da Computação no Instituto Federal do Ceará
+                em meados de
+                2011. Período em que também participei de diversos cursos na área.
+                <!----><br><br>
+                <!---->🧑‍🍳 Originalmente formado em Gastronomia e Pós-Graduado em Gestão e Negócios em
+                Gastronomia, tenho na
+                cozinha uma das minhas paixões.
+                <!----><br><br>
+                <!---->🎶 Apaixonado por música, já atuei por vários anos como DJ até meados de 2016, o que
+                facilitou a minha
+                comunicação e a interação com grupos de pessoas e a lidar bem com trabalhos em equipes.
+                <!----><br><br>
+                <!---->📈 Estou sempre em busca de continuar a aprender e evoluir!
+            </p>
         </div>
 
     </div>
