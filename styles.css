@@ -104,6 +104,24 @@ html {
   border-radius: 50%;
 }
 
+.pageNotFound {
+  margin-top: 17px;
+  width: 213px;
+  height: 213px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.pageNotFound img {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+}
+
 .greetings {
   padding-top: 16px;
   color: var(--burntSienna);
