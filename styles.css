@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+::selection {
+  background-color: var(--charcoal);
+  color: var(--maizeCrayola);
+}
+
 body,
 html {
   font-family: "Poppins", sans-serif;
@@ -112,7 +117,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .pageNotFound img {
