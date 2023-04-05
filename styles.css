@@ -78,6 +78,13 @@ html {
   justify-content: center;
 }
 
+/* Media Query */
+@media screen and (max-width: 768px) {
+	.container {
+    height: 100svh;
+  }
+}
+
 .treeContainer {
   display: flex;
   flex-direction: column;
